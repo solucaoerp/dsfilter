@@ -1,0 +1,41 @@
+.filterForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.inputField {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--color-page-background);
+    background: var(--color-card-background);
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    color: var(--color-subtitles);
+}
+
+.inputField::placeholder {
+    color: var(--color-subtitles);
+}
+
+.inputField:focus {
+    border-color: var(--color-monetary-values);
+}
+
+.filterButton {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background: var(--color-monetary-values);
+    color: var(--color-card-background);
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 16px;
+    font-weight: 700;
+    outline: none;
+}
