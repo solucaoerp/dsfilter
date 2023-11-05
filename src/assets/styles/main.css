@@ -1,0 +1,62 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset basic CSS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Variables */
+:root {
+    --color-titles: #FFFFFF;
+    --color-subtitles: #6F6F6F;
+    --color-monetary-values: #55BC04;
+    --color-navbar-background: #55BC04;
+    --color-page-background: #C2C2C2;
+    --color-card-background: #FFFFFF;
+}
+
+/* Applying global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-page-background);
+    color: var(--color-titles);
+}
+
+/* Flexbox Settings */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* other styles */
+}
+
+/* Other global settings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-titles);
+}
+
+h2 {
+    color: var(--color-subtitles);
+}
+
+.money {
+    color: var(--color-monetary-values);
+}
+
+.navbar {
+    background-color: var(--color-navbar-background);
+}
+
+.card {
+    background-color: var(--color-card-background);
+    /* other styles */
+}
