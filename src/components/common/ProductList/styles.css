@@ -1,0 +1,38 @@
+.productList {
+    width: 100%;
+}
+
+.productItem {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #55BC04;
+    background: #FFF;
+    box-sizing: border-box;
+}
+
+.productName {
+    color: #6F6F6F;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 5px;
+}
+
+.productPrice {
+    color: #55BC04;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.noProductsMessage {
+    color: #ff0000;
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+}

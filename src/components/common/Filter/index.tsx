@@ -1,9 +1,14 @@
 import { useState } from 'react';
+
 import styles from './Filter.module.css';
 import { ChangeEventTypeCustom, FormEventTypeCustom } from '../../../utils/TypesEvents';
 import { FilterData } from '../../../types/FilterTypes';
 
-export default function Filter() {
+type FilterProps = {
+    onFilter: (minPrice: number, maxPrice: number) => void;
+};
+
+export default function Filter({ onFilter }: FilterProps) {
     const [filterData, setFilterData] = useState<FilterData>({});
 
     function handleInputChange(event: ChangeEventTypeCustom) {
@@ -14,10 +19,7 @@ export default function Filter() {
 
     function handleSubmit(event: FormEventTypeCustom) {
         event.preventDefault();
-        const minValue = filterData.minPrice ?? 0;
-        const maxValue = filterData.maxPrice ?? Number.MAX_VALUE;
-
-        console.log('Filtrando valores entre:', minValue, 'e', maxValue);
+        onFilter(filterData.minPrice ?? 0, filterData.maxPrice ?? Number.MAX_VALUE);
     }
 
     return (
