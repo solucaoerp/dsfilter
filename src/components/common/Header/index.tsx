@@ -1,9 +1,9 @@
 import './styles.css';
-
 import { useContext } from 'react';
 import { ProductCountContext } from '../../../contexts/context-product';
 
 export default function Header() {
+
     const { productCount } = useContext(ProductCountContext);
 
     return (
